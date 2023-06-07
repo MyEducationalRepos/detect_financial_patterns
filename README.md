@@ -1,3 +1,3 @@
-# Mastering financial patterns exercises
-Personal scripts based on "Mastering Financial Pattern Recognition" (by Sofien Kaabar) exercises  
-# detect_financial_patterns
+# Detect Financial Patterns
+
+Ejercises in finding financial stock patterns (using yfinance)
