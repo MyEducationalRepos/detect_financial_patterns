@@ -509,7 +509,7 @@ def z_scores(serie):
 
 ticker_vals = yf.Tickers(stocks_list)
 
-my_series = ticker_vals.history(period="4y",interval="1wk").Close.pct_change().dropna()
+my_series = ticker_vals.history(period="4y",interval="1wk").Close.pct_change()
 
 df = my_series.apply(z_scores).tail(1).T
 
@@ -519,4 +519,4 @@ df.columns = ['Ticker','Weekly Z-Score']
 df.sort_values(by='Weekly Z-Score',ascending=True, inplace=True)
 
 
-print(df[df['Weekly Z-Score'] < -1])
+print(df[df['Weekly Z-Score']].head(5))

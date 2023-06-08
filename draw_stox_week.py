@@ -38,7 +38,7 @@ def z_scores(serie):
 ticker_vals = yf.Tickers(stocks_list)
 
 my_series = ticker_vals.history(period="4y",
-                                interval="1wk").Close.pct_change().dropna()
+                                interval="1wk").Close.pct_change()
 
 df = my_series.apply(z_scores).tail(1).T
 
