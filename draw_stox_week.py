@@ -51,4 +51,4 @@ df.sort_values(by='Weekly Z-Score',
                inplace=True)
 
 
-print(df[df['Weekly Z-Score'] < -1])
+print(df.head(5))

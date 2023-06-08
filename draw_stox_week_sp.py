@@ -519,4 +519,5 @@ df.columns = ['Ticker','Weekly Z-Score']
 df.sort_values(by='Weekly Z-Score',ascending=True, inplace=True)
 
 
-print(df[df['Weekly Z-Score']].head(5))
+print(df.head(5))
+
